@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Workout Sidekick</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="Muscles">
+        <item>Chest</item>
+        <item>Back</item>
+        <item>Shoulders</item>
+        <item>Biceps</item>
+        <item>Triceps</item>
+        <item>Abdominals</item>
+        <item>Hamstrings</item>
+        <item>Quadriceps</item>
+        <item>Calves</item>
+    </string-array>
+    <string-array name="Days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="Equipment">
+        <item>Body Only</item>
+        <item>Dumbbell</item>
+        <item>Barbell</item>
+        <item>Machine</item>
+        <item>Cable</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="prompt">Select Muscle</string>
+    <string name="title_activity_results">ResultsActivity</string>
+    <string name="title_activity_unicorn">UnicornActivity</string>
+    <string name="other_muscles">Other Muscles</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.usability.workoutsidekick"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar" >
+        <activity
+            android:name="com.usability.workoutsidekick.activities.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.usability.workoutsidekick.activities.GenerateExerciseActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.WeeklyScheduleActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.ExerciseCatalogActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.ViewGeneratedExerciseActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.TabLayoutActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.AllActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.FavoritesActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.UserActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.RoutineActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.DescriptionActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.CreateExcersiseActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.AddGeneratedExerciseToRoutineActivity" />
+        <activity android:name="com.usability.workoutsidekick.activities.AddCatalogExerciseToRoutine" />
+        <activity android:name="com.usability.workoutsidekick.activities.EditActivity" />
+        <activity
+            android:name="com.usability.workoutsidekick.activities.ResultsActivity"
+            android:label="@string/title_activity_results" >
+        </activity>
+        <activity
+            android:name="com.usability.workoutsidekick.activities.UnicornActivity"
+            android:label="@string/title_activity_unicorn" >
+        </activity>
+    </application>
+
+</manifest>

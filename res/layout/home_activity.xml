@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Workout Sidekick"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+        <Button
+            android:id="@+id/generate_exercise_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Generate Exercise"
+            android:textSize="25sp" 
+            android:onClick="goToGenerateExercise"/>
+
+        <Button
+            android:id="@+id/weekly_schedule_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Weekly Schedule"
+            android:textSize="25sp" 
+            android:onClick="goToWeeklySchedule"/>
+
+        <Button
+            android:id="@+id/exercise_catalog_home"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Exercise Catalog"
+            android:textSize="25sp" 
+            android:onClick="goToExerciseCatalog"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

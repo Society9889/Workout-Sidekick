@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Select Muscle Group"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/generateExercise"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/human_body_outline"
+        tools:ignore="ContentDescription" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/generateExercise"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:entries="@array/Muscles" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/generateExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="generateExercise"
+        android:text="Generate Exercise" />
+
+    <TextView
+        android:id="@+id/selectedMuscle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignTop="@+id/listView1"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:text="Select Muscle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
